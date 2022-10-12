@@ -20,9 +20,9 @@ body {
 
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   color: #333333;
-  margin: 0;
+
 }
 
 .page-header {
@@ -65,7 +65,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/main/index-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   }
 
@@ -185,6 +185,12 @@ body {
   font-weight: 400;
 }
 
+.newsletter-email-field{
+  color: #F2F2F2;
+  width: 452px;
+  height: 52px;
+}
+
 .newsletter-button{
   font-size: 20px;
   line-height: 36px;
@@ -231,7 +237,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/catalog/hero.png");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -290,6 +296,14 @@ body {
   line-height: 23px;
 }
 
+.select-control-title{
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 
 .product-card{
   font-size: 18px;
@@ -304,6 +318,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+
 }
 
 
