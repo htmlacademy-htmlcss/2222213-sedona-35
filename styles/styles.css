@@ -21,8 +21,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   background-color: #F2F2F2;
-  color: #333333;
-
+  color: #000000;
 }
 
 .page-header {
@@ -65,8 +64,8 @@ body {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/main/index-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
   }
 
   .hero-description{

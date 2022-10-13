@@ -38,8 +38,8 @@
         <a class="navigation-link-want" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="main-inner">
-      <section class="catalog-products">
+    <main class="main-inner" data-test="main">
+      <section class="catalog-products" data-test="filter">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
@@ -111,7 +111,7 @@
           <button class="button-button" type="submit">Сбросить</button>
         </form>
       </section>
-      <section class="products">
+      <section class="products" data-test="catalog">
         <h2 class="select-control-title">Найдено гостиниц: 38 </h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешёвое</option>
