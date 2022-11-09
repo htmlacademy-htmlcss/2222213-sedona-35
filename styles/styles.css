@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  min-width: 1280px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -197,7 +196,7 @@ body {
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
 }
 
 .photo-image-1 {
@@ -215,7 +214,7 @@ body {
 
 .hero-description {
   margin: auto;
-  padding: 69px 290px 25px 290px;
+  padding: 69px 285px 25px 285px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -226,7 +225,7 @@ body {
 
 .hero-advantages {
   margin: auto;
-  padding: 0 274px 90px 275px;
+  padding: 0 270px 90px 270px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -303,7 +302,7 @@ body {
 
 .advantages-description {
   margin: 0;
-  padding: 0 85px 0 85px;
+  padding: 0 80px 0 80px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -437,7 +436,7 @@ body {
 
 .newsletter-page-title {
   margin: 0;
-  padding: 96px 398px 20px 398px;
+  padding: 96px 390px 20px 390px;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -473,7 +472,7 @@ body {
 
 .newsletter-email-field {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 15px;
   min-width: 412px;
   height: 22px;
   padding: 14px 20px;
@@ -484,13 +483,14 @@ body {
   background-color: #f2f2f2;
   color: #000000;
   border-radius: 4px 0 0 4px;
+  outline: none;
 }
 
 
 .newsletter-email-field::placeholder {
   color: #000000;
   opacity: 0.6;
-}
+ }
 
 .newsletter-button {
   margin: 0;
@@ -1414,12 +1414,12 @@ body {
   color: #000000;
   background-color: #ffffff;
   width: 1200px;
-  min-height: 410px;
+  min-height: 415px;
 }
 
 .newsletter-catalog-page-title {
   margin: 0;
-  padding: 90px 398px 20px 398px;
+  padding: 95px 396px 20px 396px;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -1469,6 +1469,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  text-align: center;
 }
 
 .pagination-link:hover {
