@@ -883,7 +883,8 @@ body {
 
 .filter-input::-webkit-outer-spin-button,
 .filter-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -948,7 +949,8 @@ body {
 
 .filter-input-1::-webkit-outer-spin-button,
 .filter-input-1::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1118,7 +1120,8 @@ body {
   background-image: url("../images/catalog/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover,
@@ -1778,7 +1781,8 @@ body {
 
 .field-button::-webkit-outer-spin-button,
 .field-button::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
