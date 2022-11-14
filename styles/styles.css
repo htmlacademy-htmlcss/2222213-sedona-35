@@ -796,10 +796,6 @@ body {
   transform: rotate(-40deg);
 }
 
-.breadcrumbs-item:last-child .breadcrumbs-link-arrow::after .breadcrumbs-link-arrow::before {
-  content: none;
-}
-
 .breadcrumbs-link-arrow:hover {
   color: rgba(255, 255, 255, 0.6);
 }
