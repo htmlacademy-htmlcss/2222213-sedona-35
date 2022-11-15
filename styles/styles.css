@@ -91,19 +91,6 @@ body {
 }
 
 
-.navigation-link:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.navigation-link:focus {
-  color: rgba(0, 0, 0, 1);
-}
-
-.navigation-link:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-
 .navigation-link-current::before {
   position: absolute;
   right: 15px;
@@ -154,6 +141,19 @@ body {
   background-color: #ffffff;
   text-decoration: none;
 }
+
+.navigation-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-link:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .navigation-link-favourites {
   display: block;
@@ -218,7 +218,7 @@ body {
 .welcome-sedona {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("../images/main/sedona.svg"), url("../images/main/index-background.jpg");
+  background-image: url("../images/main/welcome-down.svg"), url("../images/main/index-background.jpg");
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
   width: 1200px;
@@ -271,7 +271,7 @@ body {
   display: flex;
   color: #ffffff;
   background-color: #000000;
-  background-image: url("../images/main/a-real-town.png");
+  background-image: url("../images/main/real-town.png");
   width: 400;
   min-height: 384px;
 }
@@ -288,7 +288,7 @@ body {
   flex-direction: row-reverse;
   color: #ffffff;
   background-color: #000000;
-  background-image: url("../images/main/a-real-town.png");
+  background-image: url("../images/main/real-town.png");
   width: 400;
   min-height: 384px;
 }
@@ -622,15 +622,15 @@ body {
   margin: auto;
 }
 
-.footer-website-html:hover {
+.footer-contacts-website:hover .footer-website-html {
   fill: rgba(117, 97, 87, 1);
 }
 
-.footer-website-html:focus {
+.footer-contacts-website:focus .footer-website-html {
   fill: rgba(117, 97, 87, 1);
 }
 
-.footer-website-html:active {
+.footer-contacts-website:active .footer-website-html {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -664,15 +664,15 @@ body {
   margin: auto;
 }
 
-.footer-social-site:hover {
+.footer-social-link:hover .footer-social-site {
   fill: rgba(104, 162, 202, 1);
 }
 
-.footer-social-site:focus {
+.footer-social-link:focus .footer-social-site {
   fill: rgba(104, 162, 202, 1);
 }
 
-.footer-social-site:active {
+.footer-social-link:active .footer-social-site {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -870,6 +870,10 @@ body {
 }
 
 .control:focus .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input:focus + .control-mark {
   outline: 3px solid #83b3d3;
 }
 
@@ -1351,7 +1355,7 @@ body {
   background-position: left bottom;
 }
 
-.product-card-title-link{
+.product-card-link {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
@@ -1628,15 +1632,17 @@ body {
 
 .modal {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 577px;
   margin: auto;
-  padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
+  padding: 64px 70px;
 }
 
-.modal-auth {
-  width: 577px;
-}
 
 .modal-close-button {
   position: absolute;
@@ -1646,22 +1652,31 @@ body {
   height: 60px;
   background-color: #ffffff;
   border: none;
-  background-image: url("../images/footer/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
-.modal-close-button:hover {
-  background-image: url("../images/footer/close-hover.svg");
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
-.modal-close-button:focus {
-  background-image: url("../images/footer/close-focus.svg");
+
+.modal-close-button:hover .close-button {
+  fill: #e6e6e6;
 }
 
-.modal-close-button:active {
-  background-image: url("../images/footer/close-active.svg");
+.modal-close-button:focus .close-button {
+  fill: #e6e6e6;
+  border: 3px solid rgba(131, 179, 211, 1);
+  border-radius: 50%;
+}
+
+.modal-close-button:active .close-button {
+  color: rgba(117, 97, 87, 0.6);
 }
 
 .modal-content {
@@ -1676,13 +1691,13 @@ body {
 .modal-title {
   display: flex;
   margin: 0;
-  margin-bottom: 64px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 62px;
 }
 
 .auth-form {
@@ -1708,7 +1723,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 
 .form-label {
   font-family: "PT Sans", sans-serif;
@@ -1757,7 +1771,8 @@ body {
   padding-left: 157px;
   margin: 0;
   margin-bottom: 0;
-  padding-bottom: 26px;
+  padding-bottom: 21px;
+  padding-top: 5px;
 }
 
 .departure-date-date {
@@ -1811,7 +1826,8 @@ body {
   padding-left: 157px;
   margin: 0;
   margin-bottom: 0;
-  padding-bottom: 26px;
+  padding-top: 6px;
+  padding-bottom: 20px;
 }
 
 .adults-date {
@@ -1829,12 +1845,8 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  padding-left: 2px;
 }
-
-.arrival-count-wrapper {
-  display: flex;
-}
-
 
 .field-button {
   text-align: center;
@@ -1848,29 +1860,46 @@ body {
   color: #000000;
 }
 
+.arrival-count-wrapper {
+  display: flex;
+  position: relative;
+}
+
 .button-minus {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   border: none;
-  background-image: url("../images/footer/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   border-radius: 4px 0 0 4px;
 }
 
-.button-minus:hover {
-  background-image: url("../images/footer/minus-hover.svg");
+.minus {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
-.button-minus:focus {
-  background-image: url("../images/footer/minus-focus.svg");
+.button-minus:hover .minus {
+  fill: #000000;
+  fill-opacity: 1;
 }
 
-.button-minus:active {
-  background-image: url("../images/footer/minus.svg");
+.button-minus:focus .minus {
+  fill: #000000;
+  fill-opacity: 1;
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
+  padding: 9px 3px;
+}
+
+.button-minus:active .minus {
+  fill: #000000;
+  fill-opacity: 0.3;
 }
 
 .button-plus {
@@ -1879,23 +1908,35 @@ body {
   align-items: center;
   width: 40px;
   border: none;
-  background-image: url("../images/footer/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
 }
 
-.button-plus:hover {
-  background-image: url("../images/footer/plus-hover.svg");
+.plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 70px;
+  margin: auto;
 }
 
-.button-plus:focus {
-  background-image: url("../images/footer/plus-focus.svg");
+.button-plus:hover .plus {
+  fill: #000000;
+  fill-opacity: 1;
 }
 
-.button-plus:active {
-  background-image: url("../images/footer/plus.svg");
+.button-plus:focus .plus {
+  fill: #000000;
+  fill-opacity: 1;
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
+  padding: 3px 3px;
+}
+
+.button-plus:active .plus {
+  fill: #000000;
+  fill-opacity: 0.3;
 }
 
 .field-button::-webkit-outer-spin-button,
