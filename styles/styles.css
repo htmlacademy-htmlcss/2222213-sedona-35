@@ -1677,6 +1677,7 @@ body {
 
 .modal-close-button:active .close-button {
   color: rgba(117, 97, 87, 0.6);
+  fill: #e6e6e6;
 }
 
 .modal-content {
