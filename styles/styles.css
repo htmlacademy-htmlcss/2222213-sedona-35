@@ -1363,6 +1363,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  display: inline-block;
 }
 
 .product-card .product-card-title {
